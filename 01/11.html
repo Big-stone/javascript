@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>分支语句</title>
+</head>
+<body>
+    <!--if    -->
+<script>
+    //
+    var time = 69;
+    if(time>60){
+        console.log("hello world");
+    }
+</script>
+
+    <!--if else-->
+<script>
+    //如果小明的考试成绩大于90(含)分,那么爸爸奖励他100元钱,否则的话,爸爸就让小明跪方便面.
+    var score = 88;
+    if(score>=90){
+        console.log("奖励100元");
+    }else {
+        console.log("跪方便面");
+    }
+</script>
+
+    <!--if else if-->
+<script>
+   /* 对学员的结业考试成绩评测
+    成绩>=90 ：A
+    90>成绩>=80 ：B
+    80>成绩>=70 ：C
+    70>成绩>=60 ：D
+    成绩<60   ：E
+    */
+    var score = prompt("请输入成绩");
+    if(score>=90){
+        console.log("A");
+    }else if(score>=80 ){
+        console.log("B");
+    }else if(score>=70){
+        console.log("C");
+    }else if(score>=60){
+        console.log("D");
+    }else {
+        console.log("E");
+    }
+</script>
+
+    <!--switch-->
+<script>
+    /*
+    * 李四的年终工作评定,如果定为A级,则工资涨500元,如果定为B级,则工资涨200元,如果定为C级,工资不变,如果定为D级工资降200元,如果定为E级工资降500元.
+     设李四的原工资为5000,请用户输入李四的评级,然后显示李四来年的工资.
+    * */
+    var level = prompt("请输入李四的工作评级 ");
+    var salary = 5000;
+    switch(level){
+        case "A":
+            salary +=500;
+            break;
+        case "B":
+            salary +=200;
+            break;
+        case "C":
+            break;
+        case "D":
+            salary -=200;
+            break;
+        case "E":
+            salary -=500;
+            break;
+        default :
+            alert("请按套路出牌");
+            break;
+    }
+    console.log(salary);
+</script>
+
+
+</body>
+</html>
